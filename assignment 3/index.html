@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+<body>
+    <h1>Job Application Form</h1>
+
+    <form action="" method="POST">
+
+        <!-- Personal Information Section -->
+        <h2>Personal Information</h2>
+
+        <label for="firstName">First Name: </label>
+        <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required><br><br>
+
+        <label for="lastName">Last Name: </label>
+        <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required><br><br>
+
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" placeholder="example@example.com" required><br><br>
+
+        <label for="phone">Phone Number: </label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required><br><br>
+
+        <label for="dob">Date of Birth: </label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="gender">Gender: </label>
+        <input type="radio" id="male" name="gender" value="Male"> Male
+        <input type="radio" id="female" name="gender" value="Female"> Female
+        <input type="radio" id="other" name="gender" value="Other"> Other<br><br>
+
+        <label for="address">Address: </label>
+        <textarea id="address" name="address" rows="4" placeholder="Enter your address" required></textarea><br><br>
+
+        <!-- Education Section -->
+        <h2>Education</h2>
+
+        <label for="degree">Highest Degree: </label>
+        <select id="degree" name="degree" required>
+            <option value=""></option>
+            <option value="highSchool">High School</option>
+            <option value="associateDegree">Associate's Degree</option>
+            <option value="bachelorDegree">Bachelor's Degree</option>
+            <option value="masterDegree">Master's Degree</option>
+            <option value="doctorate">Doctorate</option>
+        </select><br><br>
+
+        <label for="institution">Institution: </label>
+        <input type="text" id="institution" name="institution" placeholder="Enter your institution name" required><br><br>
+
+        <label for="graduationYear">Year of Graduation: </label>
+        <input type="number" id="graduationYear" name="graduationYear" min="1900" max="2099" step="1" placeholder="e.g. 2022" required><br><br>
+
+        <!-- Work Experience Section -->
+        <h2>Work Experience</h2>
+
+        <label for="company">Previous Company: </label>
+        <input type="text" id="company" name="company" placeholder="Enter your previous company name"><br><br>
+
+        <label for="jobTitle">Job Title: </label>
+        <input type="text" id="jobTitle" name="jobTitle" placeholder="Enter your job title"><br><br>
+
+        <label for="yearsExperience">Years of Experience: </label>
+        <input type="number" id="yearsExperience" name="yearsExperience" min="0" max="50" placeholder="e.g. 3"><br><br>
+
+        <label for="skills">Skills (comma separated): </label>
+        <input type="text" id="skills" name="skills" placeholder="e.g. JavaScript, Python, HTML, CSS"><br><br>
+
+        <!-- Resume Upload Section -->
+        <h2>Resume Upload</h2>
+
+        <label for="resume">Upload Resume (PDF): </label>
+        <input type="file" id="resume" name="resume" accept=".pdf" required><br><br>
+
+        <!-- Additional Information Section -->
+        <h2>Additional Information</h2>
+
+        <label for="coverLetter">Cover Letter: </label><br>
+        <textarea id="coverLetter" name="coverLetter" rows="6" cols="50" placeholder="Write a brief cover letter." required></textarea><br><br>
+
+        <label for="availableStartDate">Available Start Date: </label>
+        <input type="date" id="availableStartDate" name="availableStartDate" required><br><br>
+
+        <!-- Consent and Submission -->
+        <label for="consent">I consent to the processing of my personal data as per the company's privacy policy.</label>
+        <input type="checkbox" id="consent" name="consent" required><br><br>
+
+        <button type="submit">Submit Application</button>
+
+    </form>
+</body>
+</html>
